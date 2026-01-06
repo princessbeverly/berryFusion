@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BerryFusion | Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Optional: Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="navbar">
+        <div class = "HeadSec">
+            <div class = "logo">
+                <img src="./Assets/logo.svg" alt="Berry-Fusion">    
+            </div>
+            <div class = "storeRoof">
+            </div>
+        </div>
+        
+        <div class="navSec">
+            <div class ="page"><a href="index.html">HOME</a></div>
+            <div class ="page"><a href="product.html">PRODUCTS</a></div>
+            <div class ="page"><a href="cart.html">CART</a></div>
+            <div class ="page"><a href="about.html">ABOUT</a></div>
+        </div>
+    </header>
+
+    <!-- ===== PRODUCT LIST ===== -->
+    <main class="container">
+        <h2>Products</h2>
+
+        <div class="product-grid" id="product-list">
+            <!-- Products injected here via JavaScript -->
+             <div class="product-contain" data-id="1" data-name="Classic Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="1" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Classic Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A sweet blend of banana and <br>
+                        rich cholocate, topped with <br>
+                        fresh raspberries, strawberries,<br>
+                        and dark chocolate shavings<br>
+                        for a fruity twist on a classic treat.</p>
+                    </div>                    
+                </div>
+            </div>
+             <div class="product-contain" data-id="2" data-name="Tropical Sunrise Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="2" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Tropical Sunrise Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A refreshing mix of acai and mango<br>
+                        blended with coconut milk, topped with<br>
+                        pineapple slices, kiwi, and toasted coconut<br>
+                        for a bright tropical flavor.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="3" data-name="Berry Bliss Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="3" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Berry Bliss Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p>A smooth blended acai and mixed berries,<br>
+                        topped with blueberries, strawberries,<br>
+                        granola, and a drizzle of honey<br>
+                        for a perfectly balanced bite.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="4" data-name="Green Glow Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="4" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Green Glow Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A creamy blend of acai, banana, and spinach,<br>
+                        topped with green apple slices, chia seeds,<br>
+                        and pumpkin seeds <br>for a fresh and energizing treat.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="5" data-name="Choco Crunch Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="5" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Choco Crunch Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A rich acai and cacao blend,<br>
+                        topped with banana slices, cacao nibs,<br>
+                        granola, and almond butter<br>
+                        for a bold chocolatey crunch.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="6" data-name="Peanut Power Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="6" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Peanut Power Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A hearty acai blend with banana <br>and peanut butter,<br>
+                        topped with crushed peanuts, granola,<br>
+                        and a drizzle of honey for lasting energy.</p>
+                    </div>                    
+                </div>
+            </div>
+             <div class="product-contain" data-id="7" data-name="Citruz Zest Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="7" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Citruz Zest Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A vibrant acai and orange blend,<br>
+                        topped with mandarin slices, strawberries,<br>
+                        and fresh mint for a zesty, refreshing finish.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="8" data-name="Midnight Berry Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="8" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Midnight Berry Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A deep, rich acai blend <br>with blackberry and blueberry,<br>
+                        topped with dark cherries, cacao nibs,<br>
+                        and coconut flakes <br>for a bold berry experience.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="9" data-name="Vanilla Almond Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="9" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Vanilla Almond Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A smooth acai and vanilla blend,<br>
+                        topped with almond slices, <br>banana,
+                        and granola <br>for a subtly sweet and nutty flavor.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="10" data-name="Honey Oat Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" data-in-cart="false" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="10" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Honey Oat Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A comforting acai blend <br>with oats and banana,<br>
+                        topped with apple slices, cinnamon,<br>
+                        and honey for a warm, wholesome taste.</p>
+                    </div>                    
+                </div>
+             </div>
+             <div class="product-contain" data-id="11" data-name="Dragon Berry Bowl" data-price="75">
+                <div class ="display_product">
+                    <div class ="favorite" data-in-cart="false" onclick="toggleCart(event, this)">
+                        <img src="./Assets/not_added_to_cart.svg">
+                    </div>
+                    <div class="product-img" data-id="11" onclick="openFrame()">
+                        <img src="./Assets/product_img.png">
+                    </div>
+                    <div class="Price">
+                        <p>₱75</p>
+                        <p>250ml</p>
+                    </div>
+                </div>
+                <div class ="product-info">
+                    <div class="product_name">
+                        <p>Dragon Berry Bowl</p>
+                    </div>
+                    <div class="description">
+                        <p> A vibrant blend of acai and dragon fruit,<br>
+                        topped with strawberries, blueberries,<br>
+                        and coconut flakes <br>for a colorful, fruity delight.</p>
+                    </div>                    
+                </div>
+             </div>
+             
+         
+        </div>
+    </main>
+
+
+    <div class="overlay" id="overlay">
+        <div class="info-box">
+            
+            <span id="closeBtn" class="close-btn" onclick="closeFrame()">✖</span>
+            <p id="infoName"></p>
+            <p>Berry Fusion Bowl</p>
+            <div class="nutrition">
+                <p>Nutrition Facts</p>
+                <div class = "info">
+                    <div><p><strong>Serving Size</strong></p></div>
+                    <div><p><strong>200ml</strong></p></div>    
+                </div>
+                <div class = "info"><div><p>AMOUNT PER SERVING</p></div><div></div> 
+                </div>
+                <div class="info">
+                    <div><p><strong>Calories</strong></p></div>
+                    <div><p><strong><span id="calories"></span> kcal</strong> </p></div>
+                </div>
+                <div class="info">
+                    <div><p>DAILY VALUE</p></div>
+                    <div></div>
+                </div>
+                <div class="info">
+                    <div><p><strong>Protein</strong></p></div>
+                    <div><p><strong><span id="protein"></span> g</strong></p></div>
+                </div>
+                <div class="info">
+                    <div><p><strong>Carbohydrates</strong></p></div>
+                    <div><p><strong><span id="carbs"></span> g</strong> </p></div>
+                </div>
+                <div class="info">
+                    <div><p><strong>Sugars</strong></p></div>
+                    <div><p><strong><span id="sugars"></span> g</strong></p></div>
+                </div>
+                <div class="info">
+                    <div><p><strong>Fat</strong></p></div>
+                    <div><p><strong><span id="fat"></span> g</strong></p></div>
+                </div>
+                <div class="info">
+                    <div><p><strong>Fiber</strong></p></div>
+                    <div><p><strong><span id="fiber"></span> g</strong></p></div>
+                </div>
+                <div class="info">
+                    <div><p><strong>Sodium</strong></p></div>
+                    <div><p><strong><span id="sodium"></span> mg</strong></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html>

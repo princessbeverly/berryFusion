@@ -1,0 +1,463 @@
+@font-face {
+    font-family: "FredokaOne";
+    src: url("../Assets/FredokaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    min-height: 100%;
+    background: linear-gradient(
+        to bottom,
+        #D07DB1,
+        #661E59
+    );
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-bottom: 20px;
+}
+.navSec {
+    font-family: "FredokaOne", sans-serif;
+    display: flex;
+    width: 100%;
+    
+}
+
+.page {
+    background-color: #523273;
+    border: 0px;
+    border-radius: 15px;
+    text-align: center;
+    width: 10%;
+    padding: 5px;
+}
+
+.page a {
+    display: block;
+    text-decoration: none;
+    color: pink;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.page:hover{
+    transform: scale(1.2)
+}
+
+.HeadSec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.storeRoof{
+    flex: 1;
+    min-height: 100px;
+    display: flex;
+    height: 100%;
+    background: url("/Assets/storeRoof.svg") repeat-x center/auto 100%;
+}
+
+.navSec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.product-grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-flow: row dense;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.product-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 346.6px;
+    width: 301.91px;
+    border-radius: 21%;
+    background: linear-gradient(to bottom, #F1BAE1, #D9D9D9);
+}
+
+.display_product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40%;
+    width: 95%;
+    margin-left: 2%;
+    
+}
+
+.product-img {
+    cursor: pointer;
+}
+.product-img img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s ease;
+}
+
+.product-img:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description p{
+    text-align: center;
+    font-family: "FredokaOne", sans-serif;
+    font-size: 13px;
+    color: #2D2C2C;
+}
+
+
+.Price p {
+    font-family: "FredokaOne", sans-serif;
+    font-size: 24px;
+    color: #2D2C2C;
+}
+
+.product_name p{
+    font-family: "FredokaOne", sans-serif;
+    font-size: 20px;
+    color: #2D2C2C;
+}
+
+.favorite {
+    width: 200%;
+    height: 200%;
+    cursor: pointer;
+}
+
+.favorite img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s ease;
+}
+
+.favorite:hover img {
+    transform: scale(1.2)
+}
+
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(254, 254, 254, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+/* Floating square frame */
+.info-box {
+    width: 25%;
+    height: auto;
+    margin-bottom: 10%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: popIn 0.3s ease-out;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 5%;
+}
+.info p{
+    font-family: "FredokaOne", sans-serif;
+    font-weight: 100;
+    font-size: 11px;
+}
+
+.info-box p {
+    font-family: "FredokaOne", sans-serif;
+    text-align: center;
+}
+
+/* Exit button */
+.close-btn {
+    position: static;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Animation */
+@keyframes popIn {
+    from {
+    transform: scale(0.8);
+    opacity: 0;
+    }
+    to {
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+
+.container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+.sheet {
+    font-family: "FredokaOne", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    width: 25%;
+    height: auto;
+    background: linear-gradient(to bottom, #F1BAE1, #D9D9D9);
+}
+
+.sheet .title p {
+    font-size: 25px;
+}
+.cart-item {
+    font-family: "FredokaOne", sans-serif;
+    border-bottom: 2px solid #362466;
+    padding: 1px;
+}
+
+.cart_item_disp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-controls button {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #6A2442;
+    border: 0px;
+    color:aliceblue;
+    cursor: pointer;
+}
+
+.quantity-controls .quantity {
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.price-or-remove {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+.cart-item .remove-btn {
+    background-color: #C25555;
+    border-radius: 15px;
+    font-family: "FredokaOne", sans-serif;
+    color:aliceblue;
+    border: 0px;
+    padding: 6px;
+    cursor: pointer;   
+}
+
+.remove-btn:hover {
+    background: #6A2442;
+}
+
+.cart-summary {
+    font-family: "FredokaOne", sans-serif;
+}
+
+.cart-summary .checkoutBtn {
+    font-family: "FredokaOne", sans-serif;
+    color:aliceblue;
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    background-color: #523273;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.checkoutBtn:hover {
+    background: #6A2442;
+}
+
+.footer {
+    justify-items: center;
+}
+
+@media(max-width: 1024px){
+    .HeadSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .storeRoof {
+        width: 100%;
+        height: 150%;
+    }
+    .logo img {
+        height: 170%;
+        width: 170%;
+    }
+
+    .product-grid {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-flow: row dense;
+    }
+    .navSec{
+        width: 100%;
+        gap: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .page {
+        background-color: #523273;
+        border: 0px;
+        border-radius: 15px;
+        text-align: center;
+        width: 20%;
+        padding: 5px;
+        gap: 10%;
+    }
+
+    .sheet {
+        font-family: "FredokaOne", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10%;
+        width: 50%;
+        height: auto;
+        background: linear-gradient(to bottom, #F1BAE1, #D9D9D9);
+    }
+
+}
+
+@media(max-width: 764px){
+
+    .navSec{
+        width: 100%;
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .page {
+        background-color: #523273;
+        border: 0px;
+        border-radius: 15px;
+        text-align: center;
+        width: 45%;
+        padding: 5px;
+    }
+
+    .storeRoof {
+        width: 100%;
+        height: 100%;
+    }
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .product-grid {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-auto-flow: row dense;
+    }
+
+    .info-box {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10%;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        animation: popIn 0.3s ease-out;
+    }
+
+    .sheet {
+        font-family: "FredokaOne", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10%;
+        width: 90%;
+        height: auto;
+        background: linear-gradient(to bottom, #F1BAE1, #D9D9D9);
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BerryFusion | Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class>
+
+    <header class="navbar">
+        <div class="HeadSec">
+            <div class="logo">
+                <img src="./Assets/logo.svg" alt="Berry-Fusion">    
+            </div>
+            <div class = "storeRoof"></div>
+        </div>
+        <nav class="navSec">
+            <div class ="page">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class ="page"><a href="product.html">PRODUCTS</a></div>
+            <div class ="page"><a href="cart.html">CART</a></div>
+            <div class ="page"><a href="about.html">ABOUT</a></div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class ="sheet">
+            <div class="title"><p>Your Cart</p></div>
+            <div class = "cart_item" id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total: ₱<span id="cart-total">0</span></p>
+                <button class="checkoutBtn" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Only cart.js is needed here -->
+    <script src="cart.js"></script>
+</body>
+</html>

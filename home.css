@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "FredokaOne";
+    src: url("../Assets/FredokaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header { grid-area: header; }
+.body { grid-area: body; }
+.footer { grid-area: footer; }
+
+html{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: linear-gradient(
+        to bottom,
+        #D07DB1,
+        #661E59
+    );
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.plain-roof {
+    min-height: 30px;
+    background-color: #523273;
+}
+.storeRoof{
+    flex: 1;
+    min-height: 100px;
+    display: flex;
+    height: 100%;
+    background: url("/Assets/storeRoof.svg") repeat-x center/auto 100%;
+}
+.navSec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.navSec {
+    font-family: "FredokaOne", sans-serif;
+    display: flex;
+    width: 100%;
+}
+
+.page {
+    background-color: #523273;
+    border: 0px;
+    border-radius: 15px;
+    text-align: center;
+    width: 10%;
+    padding: 5px;
+}
+
+.page a {
+    display: block;
+    text-decoration: none;
+    color: pink;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.page:hover{
+    transform: scale(1.2)
+}
+
+.info-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    margin-top: 40px;
+    font-family: "FredokaOne", sans-serif;
+    color:beige;
+}
+
+.fusion-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.description {
+    width: 50%;
+    position: relative;
+    left: 150px;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+.tale{
+    width: 50%;
+    margin-left: 50px;
+}
+.berry-poster {
+    width: 50%;
+}
+.berry-poster img{
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: -30px;
+}
+
+.posters {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 613.83px;
+}
+
+.poster-img {
+    width: 30%;
+}
+.poster-img img {
+    width: 89%;
+}
+
+.label-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.label-poster img{
+    width: 85%;
+}
+
+.footer {
+    margin-top: 10px;;
+    color: white;
+    background-color: #661E59;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "FredokaOne", sans-serif;
+}
+
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact-info a {
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about-us:hover{
+    transform: scale(1.2)
+}
+
+.about-me {
+    margin-top: 20px;
+    width: 100%;
+    font-family: "FredokaOne", sans-serif;
+    color: white;
+}
+
+.arrange {
+    display: flex;
+    flex-direction: row;
+}
+
+.visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visual img {
+    width: 50%;
+}
+
+.visual-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.essay {
+    width: 60%;
+}
+
+.visual p, .visual-description p{
+    font-size: 20px;
+}
+
+.me p, .essay p{
+    font-size: 15px;
+    margin: 5;
+}
+
+@media(max-width: 1024px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navSec{
+        width: 100%;
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .page {
+        background-color: #523273;
+        border: 0px;
+        border-radius: 15px;
+        text-align: center;
+        width: 40%;
+        padding: 5px;
+    }
+    .info-body{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .fusion-description{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    .tale p{
+        font-size:20px;
+    }
+    .description{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0px;
+    }
+    .logo img {
+        width: 300%;
+        position: relative;
+        right: 150px;
+    }
+    .berry-poster img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 45px;
+        margin: 0;
+    }
+    .posters {
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 70%;
+    }
+    .poster-img {
+        width: 40%;
+        cursor: pointer;
+    }
+    .poster-img img {
+        width: 100%;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        width: 90%;
+    }
+    
+    .contact-info p, .contact-info h3{
+        font-size: 15px;
+    }
+
+    .arrange{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+}
+
+@media(max-width: 764px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navSec{
+        width: 100%;
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .page {
+        background-color: #523273;
+        border: 0px;
+        border-radius: 15px;
+        text-align: center;
+        width: 45%;
+        padding: 5px;
+    }
+    .fusion-description{
+        display: flex;
+        flex-wrap: wrap;
+        width: 150%;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    .description{
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+    .berry-poster img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 45px;
+        margin: 0;
+    }
+    .posters {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .poster-img {
+        width: 40%;
+        cursor: pointer;
+    }
+    .poster-img img {
+        width: 100%;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        width: 90%;
+    }
+    
+    .contact-info p, .contact-info h3{
+        font-size: 15px;
+    }
+
+    .arrange{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+}
