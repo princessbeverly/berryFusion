@@ -1,0 +1,202 @@
+{
+  "products": [
+    {
+      "data_id": 0,
+      "name": "Classic Bowl",
+      "color": "purple",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 420,
+        "protein_g": 7,
+        "carbohydrates_g": 58,
+        "sugars_g": 38,
+        "fat_g": 18,
+        "fiber_g": 10,
+        "sodium_mg": 55
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A sweet blend of banana and rich chocolate, topped with fresh raspberried, strawberries, and dark chocolate shavings for a fruity twist on a classifc treat. "
+    },
+    {
+      "data_id": 1,
+      "name": "Tropical Sunrise Bowl",
+      "color": "yellow",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 390,
+        "protein_g": 6,
+        "carbohydrates_g": 62,
+        "sugars_g": 42,
+        "fat_g": 14,
+        "fiber_g": 9,
+        "sodium_mg": 45
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A refreshing mix of acai and mago blended with coconut milk, topped with pineapple slices, kiwi, and toasted coconut for a bright tropical flavor."
+    },
+    {
+        "data_id": 2,
+      "name": "Berry Bliss Bowl",
+      "color": "deep red",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 410,
+        "protein_g": 8,
+        "carbohydrates_g": 60,
+        "sugars_g": 35,
+        "fat_g": 15,
+        "fiber_g": 11,
+        "sodium_mg": 50
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A smooth blended acai and mixed berries, topped with blueberries, strawberries, granola, and a drizzel of honey for a perfectly balanced bite."
+    },
+    {
+        "data_id": 3,
+      "name": "Green Glow Bowl",
+      "color": "green",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 360,
+        "protein_g": 9,
+        "carbohydrates_g": 52,
+        "sugars_g": 28,
+        "fat_g": 13,
+        "fiber_g": 12,
+        "sodium_mg": 65
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A creamy blend of acai, banana, and spinach, topped with green apple slices for a fresh and energizing treat."
+    },
+    {
+        "data_id": 4,
+      "name": "Choco Crunch Bowl",
+      "color": "dark brown",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 460,
+        "protein_g": 9,
+        "carbohydrates_g": 55,
+        "sugars_g": 34,
+        "fat_g": 22,
+        "fiber_g": 11,
+        "sodium_mg": 60
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A rich acai and cacao blend, topped with banana slices, cacao nibs, granola, and almond butter for a bold chocolatey crunch."
+    },
+    {
+        "data_id": 5,
+      "name": "Peanut Power Bowl",
+      "color": "tan",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 480,
+        "protein_g": 13,
+        "carbohydrates_g": 50,
+        "sugars_g": 30,
+        "fat_g": 25,
+        "fiber_g": 10,
+        "sodium_mg": 85
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A hearty acai blend with banana and peanut butter, topped with crushed peanuts, granola, and a drizzel of honey for lasting energy."
+    },
+    {
+        "data_id": 6,
+      "name": "Citrus Zest Bowl",
+      "color": "orange",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 370,
+        "protein_g": 6,
+        "carbohydrates_g": 61,
+        "sugars_g": 40,
+        "fat_g": 12,
+        "fiber_g": 9,
+        "sodium_mg": 40
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A vibrant acai and orange blend, topped with mandarin slices, strawberries, and fresh mint for zesty, refreshing finish."
+    },
+    {
+        "data_id": 7,
+      "name": "Midnight Berry Bowl",
+      "color": "midnight blue",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 400,
+        "protein_g": 7,
+        "carbohydrates_g": 57,
+        "sugars_g": 33,
+        "fat_g": 16,
+        "fiber_g": 12,
+        "sodium_mg": 50
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A deep, rich acai blend with blackberry and blueberry, topped with dark cherries, cacao nibs, and coconut flakes for a bold berry experience."
+    },
+    {
+        "data_id": 8,
+      "name": "Vanilla Almond Bowl",
+      "color": "cream",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 430,
+        "protein_g": 10,
+        "carbohydrates_g": 54,
+        "sugars_g": 32,
+        "fat_g": 19,
+        "fiber_g": 10,
+        "sodium_mg": 55
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A smooth acai and vanilla blend, topped with almond slices, banana, and granola for a subtly sweet and nutty flavor."
+    },
+    {
+        "data_id": 9,
+      "name": "Honey Oat Bowl",
+      "color": "warm beige",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 450,
+        "protein_g": 9,
+        "carbohydrates_g": 63,
+        "sugars_g": 36,
+        "fat_g": 16,
+        "fiber_g": 11,
+        "sodium_mg": 70
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A comforting acai blend with oats and banana  topped with apple slices, cinnamon, and honey for a warm, wholesome taste."
+    },
+    {
+        "data_id": 10,
+      "name": "Dragon Berry Bowl",
+      "color": "pink",
+      "price": 75,
+      "serving": 250,
+      "nutrition": {
+        "calories_kcal": 380,
+        "protein_g": 6,
+        "carbohydrates_g": 59,
+        "sugars_g": 37,
+        "fat_g": 13,
+        "fiber_g": 10,
+        "sodium_mg": 45
+      },
+      "img": "Assets/product_img.png",
+      "product_description": "A vibrant blend of acai and dragon fruit, topped with strawberries, blueberries, and coconut flakes for a colorful, fruity delight."
+    }
+  ]
+}
