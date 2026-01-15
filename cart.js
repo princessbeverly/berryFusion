@@ -84,7 +84,7 @@ function renderSlide(index) {
       </div>
       <div class = "nutri-arrange">
         <div><p>Calories</p></div>
-        <div><p>${product.nutrition.calories_kcal}ml</p></div>
+        <div><p>${product.nutrition.calories_kcal}kcal</p></div>
       </div>
       <div class = "nutri-arrange">
         <div><p>(Daily Value)</p></div>
@@ -376,4 +376,5 @@ function checkout() {
   renderSlide(currentIndex);
   renderProductList();
 }
+
 
